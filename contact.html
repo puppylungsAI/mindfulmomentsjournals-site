@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Mindful Moments for questions, collaborations, or personalized journal recommendations.">
+    <title>Contact Us | Mindful Moments</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--deep-forest);
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid var(--blush-tone);
+            border-radius: 10px;
+            font-family: var(--font-main);
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--sage-green);
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .contact-item {
+            margin: 1.5rem 0;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="lotus-icon">🪷</span>
+                <span class="brand-name">Mindful Moments</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="journals.html">Journals</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" style="min-height: 40vh;">
+        <div class="container">
+            <div class="hero-content" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <h1 class="hero-title">
+                    Get in <span class="accent-text">Touch</span>
+                </h1>
+                <p class="hero-subtitle">
+                    We'd love to hear from you
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <form class="contact-form" id="contactForm">
+                <h2 style="text-align: center; margin-bottom: 2rem; color: var(--deep-forest);">Send Us a Message</h2>
+
+                <div class="form-group">
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <h3 style="font-size: 2rem; margin-bottom: 2rem; color: var(--deep-forest);">Other Ways to Connect</h3>
+                <div class="contact-item">
+                    <strong>📧 Email:</strong> mindfulmomentjournals@zohomail.com
+                </div>
+                <div class="contact-item">
+                    <strong>📷 Instagram:</strong> 
+                    <a href="https://www.instagram.com/mindfulmomentsjournal.s" target="_blank" style="color: var(--sage-green);">@mindfulmomentsjournal.s</a>
+                </div>
+                <div class="contact-item">
+                    <strong>📘 Facebook:</strong> 
+                    <a href="https://www.facebook.com/122105422911023529" target="_blank" style="color: var(--sage-green);">Mindful Moments</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Mindful Moments</h4>
+                    <p>Gentle journaling for inner peace and self-discovery.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/mindfulmomentsjournal.s" target="_blank" aria-label="Instagram">📷</a>
+                        <a href="https://www.facebook.com/122105422911023529" target="_blank" aria-label="Facebook">📘</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="journals.html">Our Journals</a></li>
+                        <li><a href="resources.html">Free Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Receive weekly mindful prompts</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-small">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mindful Moments. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            alert(`Thank you for your message, ${name}! We'll get back to you soon.`);
+            this.reset();
+        });
+    </script>
+</body>
+</html>
