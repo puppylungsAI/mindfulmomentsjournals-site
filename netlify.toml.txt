@@ -1,0 +1,8 @@
+@"
+[build]
+  command = ""
+  publish = "."
+
+[build.environment]
+  NODE_VERSION = "18"
+"@ | Set-Content -Path netlify.toml -Encoding utf8
